@@ -1,0 +1,12 @@
+agents:
+  - name: researcher
+    goal: 检索订单相关日志和数据库记录
+    tools: [db_tool, log_tool]
+
+  - name: doc_reader
+    goal: 检索相关业务文档流程
+    tools: [doc_rag_tool]
+
+  - name: writer
+    goal: 汇总所有信息，生成最终分析报告
+    tools: []
